@@ -42,6 +42,7 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ShorelineExtraction.html">Shoreline Extraction</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Shoreline Change Computation</a></li>
 </ul>
@@ -91,11 +92,11 @@ This section takes a baseline and comparison shoreline together with their respe
 </ol>
 <p>Shoreline change produces 4 files:</p>
 <ul class="simple">
-<li><p><strong>Retreat</strong> - This is poygon data showing the areas where the shoreline retreated.</p></li>
-<li><p><strong>Retreat Points</strong> - This is point data highlighting the specific points where the shoreline retreated. It also contains attribute data <code class="docutils literal notranslate"><span class="pre">change_m</span></code> showing the amount of retreat.</p></li>
-<li><p><strong>Growth</strong> - This is polygon data showing the areas where the shoreline grew.</p></li>
-<li><p><strong>Growth Points</strong> - This is point data highlighting the specific points where the shoreline grew.It also contains attribute data <code class="docutils literal notranslate"><span class="pre">change_m</span></code> showing the amount of growth.</p></li>
-<li><p><strong>Shoreline Change</strong> - This is a combination of <code class="docutils literal notranslate"><span class="pre">retreat_points</span></code> and <code class="docutils literal notranslate"><span class="pre">growth_points</span></code>. This quantifies the <code class="docutils literal notranslate"><span class="pre">total</span> <span class="pre">shoreline</span> <span class="pre">change</span></code> and <code class="docutils literal notranslate"><span class="pre">change</span> <span class="pre">rates</span> <span class="pre">per</span> <span class="pre">year</span></code>. Negative changes indicate retreat while positie changes indicate growth.</p></li>
+<li><p><strong>Erosion</strong> - This is poygon data showing the areas where the shoreline was eroded.</p></li>
+<li><p><strong>Erosion Points</strong> - This is point data highlighting the specific points where the shoreline was eroded. It also contains attribute data <code class="docutils literal notranslate"><span class="pre">change_m</span></code> showing the amount of erosion.</p></li>
+<li><p><strong>Accreation</strong> - This is polygon data showing the areas where accreation occured or simply where the shoreline grew.</p></li>
+<li><p><strong>Accreation Points</strong> - This is point data highlighting the specific points where the shoreline grew.It also contains attribute data <code class="docutils literal notranslate"><span class="pre">change_m</span></code> showing the amount of accreation.</p></li>
+<li><p><strong>Shoreline Change</strong> - This is a combination of <code class="docutils literal notranslate"><span class="pre">erosion_points</span></code> and <code class="docutils literal notranslate"><span class="pre">accreation_points</span></code>. This quantifies the <code class="docutils literal notranslate"><span class="pre">total</span> <span class="pre">shoreline</span> <span class="pre">change</span></code> and <code class="docutils literal notranslate"><span class="pre">change</span> <span class="pre">rates</span> <span class="pre">per</span> <span class="pre">year</span></code>. Negative changes indicate erosion while positie changes indicate accreation.</p></li>
 </ul>
 </div></blockquote>
 </section>

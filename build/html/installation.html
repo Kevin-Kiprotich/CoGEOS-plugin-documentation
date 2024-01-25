@@ -43,11 +43,7 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#package-installation">Package Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#install-the-plugin">Install the Plugin</a></li>
-</ul>
-</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ShorelineExtraction.html">Shoreline Extraction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="shorelineChange.html">Shoreline Change Computation</a></li>
 </ul>
@@ -78,37 +74,11 @@
              
   <section id="installation">
 <span id="installations"></span><h1>Installation<a class="headerlink" href="#installation" title="Link to this heading"></a></h1>
-<section id="package-installation">
-<h2>Package Installation<a class="headerlink" href="#package-installation" title="Link to this heading"></a></h2>
-<blockquote>
-<div><p>The CoGEOS Shoreline Extraction plugin works with external python libraries when handling most of its analysis.
-Therefore, before the plugn is installed, you would have to install all external libraries with the following procedure.</p>
-<ol class="arabic simple">
-<li><p>Open the QGIS python console.</p></li>
-<li><p>Click on show editor <a class="reference internal" href="_images/showeditor.png"><img alt="editor" src="_images/showeditor.png" style="width: 165.2px; height: 27.299999999999997px;" /></a>.</p></li>
-<li><p>Paste the following code into the untitled file.</p></li>
-<li><p>Click run.</p></li>
-</ol>
-</div></blockquote>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">import</span> <span class="nn">subprocess</span>
-<span class="linenos"> 2</span>
-<span class="linenos"> 3</span><span class="n">packages</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;earthengine-api&#39;</span><span class="p">,</span><span class="s1">&#39;folium&#39;</span><span class="p">,</span> <span class="s1">&#39;rasterio&#39;</span><span class="p">,</span> <span class="s1">&#39;rtree&#39;</span><span class="p">,</span> <span class="s1">&#39;pandas&#39;</span><span class="p">,</span> <span class="s1">&#39;geopandas&#39;</span><span class="p">,</span> <span class="s1">&#39;pyCRS&#39;</span><span class="p">,</span> <span class="s1">&#39;geemap&#39;</span><span class="p">,</span> <span class="s1">&#39;mapclassify&#39;</span><span class="p">,</span> <span class="s1">&#39;contextily&#39;</span><span class="p">,</span> <span class="s1">&#39;matplotlib_scalebar&#39;</span><span class="p">,</span> <span class="s1">&#39;opencv-python&#39;</span><span class="p">,</span> <span class="s1">&#39;natsort&#39;</span><span class="p">,</span> <span class="s1">&#39;scikit-learn&#39;</span><span class="p">]</span>
-<span class="linenos"> 4</span><span class="k">try</span><span class="p">:</span> 
-<span class="linenos"> 5</span>    <span class="k">for</span> <span class="n">package</span> <span class="ow">in</span> <span class="n">packages</span><span class="p">:</span>
-<span class="linenos"> 6</span>        <span class="n">subprocess</span><span class="o">.</span><span class="n">run</span><span class="p">([</span><span class="s2">&quot;pip&quot;</span><span class="p">,</span><span class="s2">&quot;install&quot;</span><span class="p">,</span> <span class="n">package</span><span class="p">])</span>
-<span class="linenos"> 7</span>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">package</span><span class="si">}</span><span class="s2"> installed successfully&quot;</span><span class="p">)</span>
-<span class="linenos"> 8</span>
-<span class="linenos"> 9</span><span class="k">except</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">CalledProcessError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-<span class="linenos">10</span>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error installing the dependencies: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</section>
-<section id="install-the-plugin">
-<h2>Install the Plugin<a class="headerlink" href="#install-the-plugin" title="Link to this heading"></a></h2>
 <blockquote>
 <div><p>To install the plugin, follow the following procedure.</p>
 <ol class="arabic simple">
 <li><p>Download the plugin zip <a class="reference download internal" download="" href="_downloads/b3bc193692b18c15c2da326345679211/shoreline_extraction_plugin.zip"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p></li>
+<li><p>A terminal will pop-up showing the vatious packages that are being installed</p></li>
 <li><p>Open the QGIS plugin manager</p></li>
 <li><p>Click <code class="docutils literal notranslate"><span class="pre">install</span> <span class="pre">from</span> <span class="pre">ZIP</span></code>.</p></li>
 </ol>
@@ -118,12 +88,11 @@ Therefore, before the plugn is installed, you would have to install all external
 <p><span class="caption-text"><em>Install plugin from the zip</em></span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
 </figcaption>
 </figure>
-<ol class="arabic simple" start="4">
+<ol class="arabic simple" start="5">
 <li><p>Browse to the download directory.</p></li>
 <li><p>Install the plugin.</p></li>
 </ol>
 </div></blockquote>
-</section>
 </section>
 
 

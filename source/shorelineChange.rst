@@ -22,9 +22,9 @@ Shoreline Change Computation
 
  Shoreline change produces 4 files:
 
- * **Retreat** - This is poygon data showing the areas where the shoreline retreated.
- * **Retreat Points** - This is point data highlighting the specific points where the shoreline retreated. It also contains attribute data ``change_m`` showing the amount of retreat.
- * **Growth** - This is polygon data showing the areas where the shoreline grew.
- * **Growth Points** - This is point data highlighting the specific points where the shoreline grew.It also contains attribute data ``change_m`` showing the amount of growth.
- * **Shoreline Change** - This is a combination of ``retreat_points`` and ``growth_points``. This quantifies the ``total shoreline change`` and ``change rates per year``. Negative changes indicate retreat while positie changes indicate growth.
+ * **Erosion** - This is poygon data showing the areas where the shoreline was eroded.
+ * **Erosion Points** - This is point data highlighting the specific points where the shoreline was eroded. It also contains attribute data ``change_m`` showing the amount of erosion.
+ * **Accreation** - This is polygon data showing the areas where accreation occured or simply where the shoreline grew.
+ * **Accreation Points** - This is point data highlighting the specific points where the shoreline grew.It also contains attribute data ``change_m`` showing the amount of accreation.
+ * **Shoreline Change** - This is a combination of ``erosion_points`` and ``accreation_points``. This quantifies the ``total shoreline change`` and ``change rates per year``. Negative changes indicate erosion while positie changes indicate accreation.
  
